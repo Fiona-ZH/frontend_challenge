@@ -1,0 +1,246 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #111;
+}
+
+.iphone_screen {
+  width: 414px;
+  height: 736px;
+  margin: 0px auto;
+  position: relative;
+  overflow: auto;
+  background-color: #E0E0E0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.img_status_bar {
+  width: 414px;
+  position: fixed;
+  top:0px;
+  z-index: 1;
+  background-color: #F5F6F6;
+}
+
+.nav_bar {
+  width: 414px;
+  height: 64px;
+  position: fixed;
+  top: 20px;
+  z-index: 2;
+  background-color: #F5F6F6;
+}
+
+.navbar_back {
+  width: 16px;
+  position: relative;
+  left: 16px;
+  top: 50%;
+  transform: translateY(70%);
+}
+
+.navbar_busstop {
+  width: 30px;
+  position: relative;
+  left: 20px;
+  top: 50%;
+  transform: translateY(70%);
+}
+
+.nav_bar h1 {
+  font-family: SF Pro Text;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-left: 80px;
+  position: relative;
+  transform: translateY(-90%);
+}
+
+.nav_bar h2 {
+  font-family: SF Pro Text;
+  font-size: 0.9em;
+  margin-top: 3px;
+  margin-left: 80px;
+  position: relative;
+  transform: translateY(-90%);
+}
+
+.navbar_fav {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icon_navbar_fav.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
+  margin-right: 16px;
+  transform: translateY(-150%);
+}
+
+.navbar_fav:hover {
+  background-image: url("../images/icon_navbar_fav_selected.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navbar_go {
+  width: 28px;
+  float: right;
+  right: 16px;
+  position: relative;
+  transform: translateY(-165%);
+}
+
+.map {
+  background-image: url("../images/img_map_map.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 414px;
+  height: 500px;
+  position: fixed;
+  top: 59px;
+}
+
+.map_loc {
+  width: 20px;
+  position: fixed;
+  margin-left: 16px;
+  top: 320px;
+}
+
+.map_stoppin {
+  width: 30px;
+  position: fixed;
+  margin-left: 165px;
+  top: 200px;
+}
+
+.map_compass {
+  width: 10px;
+  position: fixed;
+  margin-left: 386px;
+  top: 100px;
+}
+
+.buslist_container {
+  position: relative;
+  margin: 0 auto;
+  background-color: #E0E0E0;
+}
+
+.top_space {
+  padding-top: 2px;
+  padding-bottom: 10px;
+  padding-left: 188px;
+  margin: 350px 0 0 0;
+  background-color: #FFF;
+}
+
+.busline {
+  margin: 1px auto;
+  position: relative;
+  background-color: #FFF;
+}
+
+.busline:hover {
+  background-color: #F3F3F3;
+}
+
+.buslist_bus {
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+  width: 70px;
+  padding: 16px;
+  display: inline-block;
+}
+
+.buslist_destination {
+  font-weight: 300;
+  margin: 16px 0;
+  display: inline-block;
+}
+
+.buslist_arrival {
+  font-weight: 500;
+  padding: 18px 10px 0 0;
+  float: right;
+  display: inline-block;
+}
+
+.buslist_alarm {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/icon_list_alarm.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.buslist_alarm:hover {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/icon_list_alarm_selected.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.buslist_spc {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 21px 10px 0 0;
+  float: right;
+  display: inline-block;
+}
+
+.buslist_alarmna {
+  float: right;
+  padding-top: 10px;
+  padding-right: 16px;
+}
+
+.tab_bar {
+  width: 414px;
+  height: 49px;
+  position: fixed;
+  top: 687px;
+  background-color: #F5F6F6;
+}
+
+.tabbar_icon {
+  margin-top: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.tabbar_icon_flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabbar_text {
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.tabbar_text, a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+.tabbar_text_flex {
+  display: flex;
+  justify-content: space-around;
+}
